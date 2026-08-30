@@ -1,0 +1,63 @@
+:root {
+  --ground: #ffffff;
+  --ink: #16181f;
+  --ink-2: #4d5462;
+  --ink-3: #7b8394;
+  --line: #e3e6ec;
+  --accent: #00806a;
+  --accent-wash: #e6f4f0;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #12121c;
+    --ink: #f3f4f7;
+    --ink-2: #a6abb8;
+    --ink-3: #7c8393;
+    --line: #2a2d3a;
+    --accent: #00d6a6;
+    --accent-wash: #0f2e2b;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Pretendard", "Malgun Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 96px; }
+header { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 32px; }
+.brand {
+  display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: .04em;
+  color: var(--accent); background: var(--accent-wash);
+  padding: 4px 10px; border-radius: 6px; text-decoration: none; margin-bottom: 16px;
+}
+h1 { margin: 0 0 8px; font-size: 28px; line-height: 1.3; letter-spacing: -.02em; }
+.meta { margin: 0; color: var(--ink-3); font-size: 14px; }
+h2 {
+  margin: 40px 0 12px; font-size: 19px; letter-spacing: -.01em;
+  padding-top: 20px; border-top: 1px solid var(--line);
+}
+h2:first-of-type { border-top: 0; padding-top: 0; }
+h3 { margin: 24px 0 8px; font-size: 16px; }
+p, li { color: var(--ink-2); }
+li { margin-bottom: 6px; }
+strong { color: var(--ink); }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; display: block; overflow-x: auto; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--ink); font-weight: 600; white-space: nowrap; }
+td { color: var(--ink-2); }
+.note {
+  background: var(--accent-wash); border-left: 3px solid var(--accent);
+  padding: 14px 16px; border-radius: 0 8px 8px 0; margin: 20px 0;
+}
+.note p { margin: 0; color: var(--ink); font-size: 15px; }
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--ink-3); font-size: 14px; }
+a { color: var(--accent); }
+.todo { background: #ffe9a8; color: #6b4d00; padding: 1px 6px; border-radius: 4px; font-weight: 600; }
+@media (prefers-color-scheme: dark) { .todo { background: #4a3a00; color: #ffd968; } }
