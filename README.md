@@ -5,6 +5,7 @@
 
 - 개인정보처리방침: https://hyunndy.github.io/healthtube-legal/privacy
 - 이용약관: https://hyunndy.github.io/healthtube-legal/terms
+- 계정 및 데이터 삭제 요청: https://hyunndy.github.io/healthtube-legal/delete-account
 
 문서를 고치려면 해당 `.html` 파일을 수정하고 `main`에 push하면 됩니다.
 GitHub Pages가 1분 내로 반영합니다.
